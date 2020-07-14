@@ -1,0 +1,35 @@
+{
+    "name": "webpack-vue",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "dev": "webpack-dev-server",
+        "build": "webpack"
+    },
+    "devDependencies": {
+        "@vue/compiler-sfc": "^3.0.0-beta.19",
+        "babel-core": "^6.26.3",
+        "babel-loader": "7",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-stage-0": "^6.24.1",
+        "css-loader": "^3.6.0",
+        "file-loader": "^6.0.0",
+        "html-webpack-plugin": "^4.3.0",
+        "jquery": "^3.5.1",
+        "less": "^3.11.3",
+        "less-loader": "^6.2.0",
+        "node-sass": "^4.14.1",
+        "sass-loader": "^9.0.2",
+        "style-loader": "^1.2.1",
+        "url-loader": "^4.1.0",
+        "vue": "^2.6.11",
+        "vue-loader": "^15.7.0",
+        "vue-template-compiler": "^2.6.11",
+        "vux": "^2.9.4",
+        "vux-loader": "^1.2.9",
+        "webpack": "^4.43.0",
+        "webpack-cli": "3.3.12",
+        "webpack-dev-server": "^3.11.0"
+    }
+}

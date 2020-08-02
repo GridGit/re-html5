@@ -1,0 +1,105 @@
+.scss {
+    color: blue;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: black;
+}
+
+.demo-1 {
+    // transition: width 2s linear;            
+    transition: width 1s ease-in;
+
+    &:hover {
+        color: red;
+        width: 500px;
+    }
+}
+
+
+.demo-2 {
+    margin-top: 10px;
+
+    &:hover {
+        .cell {
+            animation: move 2s linear infinite;
+        }
+    }
+
+    .cell {
+        width: 200px;
+        height: 200px;
+        background: green;
+    }
+}
+
+@keyframes move {
+    100% {
+        transform: translateX(200px);
+    }
+}
+
+
+.demo-3 {
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: green;
+    animation: jump 1s cubic-bezier(0.56, 0.07, 1, 0.43) infinite alternate;
+    // &:hover {        
+    // }
+
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0px);
+    }  
+
+    90% {
+        transform: translateY(200px);
+        clip-path: ellipse(50% 50% at 50% 50%);
+    }
+
+    100% {
+        transform: translateY(210px);
+        clip-path: ellipse(50% 45% at 50% 48%);
+    }
+}
+
+// 
+html, body {
+    height: 100%;    
+}
+.content {
+    position: relative;
+    background: #f2f2f2;
+    height: 100%;
+    .yudi {
+        width: 20px;
+        height: 30px;
+        background: green;
+        clip-path: ellipse(10% 30% at 50% 50%);
+        animation: drops 1s ease-in infinite;
+    }
+}
+
+@keyframes drops{
+    0% {
+
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(10px, 100vh, -10px);
+    }
+}

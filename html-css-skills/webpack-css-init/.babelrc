@@ -1,0 +1,13 @@
+{
+    "presets": [
+        "stage-3",
+        ["latest", {
+            "es2015": { "modules": false }
+        }]
+    ],
+    "plugins": [
+        "transform-object-assign",
+        "transform-es3-property-literals",
+        "transform-es3-member-expression-literals"
+    ]
+}

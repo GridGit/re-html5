@@ -1,3 +1,29 @@
+.audio-operate-btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: gray;
+    position: relative;
+
+    .process-bar-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;   
+        overflow: hidden;     
+        // background: hotpink;
+        
+        .process-bar {
+            width: 10%;
+            height: 100%;
+            background: green;
+        }
+    }
+}
+
 .scss {
     color: blue;
 }
@@ -57,7 +83,7 @@
 @keyframes jump {
     0% {
         transform: translateY(0px);
-    }  
+    }
 
     90% {
         transform: translateY(200px);
@@ -71,13 +97,16 @@
 }
 
 // 
-html, body {
-    height: 100%;    
+html,
+body {
+    height: 100%;
 }
+
 .content {
     position: relative;
     background: #f2f2f2;
     height: 100%;
+
     .yudi {
         width: 20px;
         height: 30px;
@@ -87,17 +116,20 @@ html, body {
     }
 }
 
-@keyframes drops{
+@keyframes drops {
     0% {
 
         opacity: 0;
     }
+
     20% {
         opacity: 1;
     }
+
     90% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         transform: translate3d(10px, 100vh, -10px);

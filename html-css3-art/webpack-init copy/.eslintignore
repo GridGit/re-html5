@@ -1,0 +1,7 @@
+/app/release/
+/app/src/js/lib/kit/clipboard.js
+/app/src/js/lib/util/exif.js
+/app/src/js/lib/gear.js
+/pack/
+/node_modules/
+/*.js
